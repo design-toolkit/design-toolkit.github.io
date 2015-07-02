@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head id="patternlab-head">
+    <title>Pattern Lab Sub-type Style Guide</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../../styleguide/css/styleguide.css" media="all" />
+    <link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css" media="all" />
+    <link rel="stylesheet" href="../../css/style.css" media="all" />
+  </head>
+  <body class="sg-pattern-list">
+    
+    <!-- View All Patterns in a Pattern Sub-Type -->
+    <div class="sg-main" role="main">
+      
+      <!-- Patterns -->
+      <div id="sg-patterns">
+          <div class="sg-pattern">
+            <h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-03-components-accordion&#x2F;02-organisms-03-components-accordion.html" class="patternLink" data-patternpartial="">accordion</a></h2>
+            <div class="sg-pattern-body">
+              <div class="accordion">
+	<ul>
+		<li>
+			<a href="#" class="acc-handle">Accordion 1</a>
+			<div class="acc-panel">
+			</div>
+		</li>
+		<li>
+			<a href="#" class="acc-handle">Accordion 2</a>
+			<div class="acc-panel">
+			</div>
+		</li>
+		<li>
+			<a href="#" class="acc-handle">Accordion 3</a>
+			<div class="acc-panel">
+			</div>
+		</li>
+	</ul>
+</div>
+              <div class="sg-code" style="display: none">
+                <h3 class="sg-code-head">HTML</h3>
+                <pre class="sg-code-html">
+                  <code>
+                    &lt;div class=&quot;accordion&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot; class=&quot;acc-handle&quot;&gt;Accordion 1&lt;&#x2F;a&gt;
+			&lt;div class=&quot;acc-panel&quot;&gt;
+			&lt;&#x2F;div&gt;
+		&lt;&#x2F;li&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot; class=&quot;acc-handle&quot;&gt;Accordion 2&lt;&#x2F;a&gt;
+			&lt;div class=&quot;acc-panel&quot;&gt;
+			&lt;&#x2F;div&gt;
+		&lt;&#x2F;li&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot; class=&quot;acc-handle&quot;&gt;Accordion 3&lt;&#x2F;a&gt;
+			&lt;div class=&quot;acc-panel&quot;&gt;
+			&lt;&#x2F;div&gt;
+		&lt;&#x2F;li&gt;
+	&lt;&#x2F;ul&gt;
+&lt;&#x2F;div&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+          <div class="sg-pattern">
+            <h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-03-components-carousel&#x2F;02-organisms-03-components-carousel.html" class="patternLink" data-patternpartial="">carousel</a></h2>
+            <div class="sg-pattern-body">
+              <div class="carousel-list-carousel">
+	<div class="carousel-container">
+	<div>
+	<div class="carousel-controls">
+		<a href="#" class="carousel-prev">&larr;</a>
+		<div class="carousel-pagination">1/5</div>
+		<a href="#" class="carousel-next">&rarr;</a>
+	</div>
+</div>
+              <div class="sg-code" style="display: none">
+                <h3 class="sg-code-head">HTML</h3>
+                <pre class="sg-code-html">
+                  <code>
+                    &lt;div class=&quot;carousel-list-carousel&quot;&gt;
+	&lt;div class=&quot;carousel-container&quot;&gt;
+	&lt;div&gt;
+	&lt;div class=&quot;carousel-controls&quot;&gt;
+		&lt;a href=&quot;#&quot; class=&quot;carousel-prev&quot;&gt;&amp;larr;&lt;&#x2F;a&gt;
+		&lt;div class=&quot;carousel-pagination&quot;&gt;1&#x2F;5&lt;&#x2F;div&gt;
+		&lt;a href=&quot;#&quot; class=&quot;carousel-next&quot;&gt;&amp;rarr;&lt;&#x2F;a&gt;
+	&lt;&#x2F;div&gt;
+&lt;&#x2F;div&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+          <div class="sg-pattern">
+            <h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-03-components-modal&#x2F;02-organisms-03-components-modal.html" class="patternLink" data-patternpartial="">modal</a></h2>
+            <div class="sg-pattern-body">
+              <p>Modal</p>
+              <div class="sg-code" style="display: none">
+                <h3 class="sg-code-head">HTML</h3>
+                <pre class="sg-code-html">
+                  <code>
+                    &lt;p&gt;Modal&lt;&#x2F;p&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+          <div class="sg-pattern">
+            <h2 class="sg-pattern-head" ><a href="../../patterns/02-organisms-03-components-wizard-step-view&#x2F;02-organisms-03-components-wizard-step-view.html" class="patternLink" data-patternpartial="">step-view</a></h2>
+            <div class="sg-pattern-body">
+              <p>Wizard / Step View</p> 
+              <div class="sg-code" style="display: none">
+                <h3 class="sg-code-head">HTML</h3>
+                <pre class="sg-code-html">
+                  <code>
+                    &lt;p&gt;Wizard &#x2F; Step View&lt;&#x2F;p&gt; 
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+      </div> <!--end #sg-patterns-->
+  
+    </div><!--end .sg-main-->
+    
+    <!-- JS to hook everything together and do annotations -->
+    <script>
+      // handle injection of items from PHP
+      var patternPartial = "viewall-organisms-components";
+      var lineage = "";
+    </script>
+    <script src="../../styleguide/js/vendor/jwerty.js"></script>
+    <script src="../../styleguide/js/postmessage.js"></script>
+    <script src="../../data/annotations.js"></script>
+    <script src="../../styleguide/js/annotations-pattern.js"></script>
+    <script src="../../styleguide/js/code-pattern.js"></script>
+    
+  </body>
+</html>

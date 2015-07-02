@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head id="patternlab-head">
+    <title>Pattern Lab Sub-type Style Guide</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="../../styleguide/css/styleguide.css" media="all" />
+    <link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css" media="all" />
+    <link rel="stylesheet" href="../../css/style.css" media="all" />
+  </head>
+  <body class="sg-pattern-list">
+    
+    <!-- View All Patterns in a Pattern Sub-Type -->
+    <div class="sg-main" role="main">
+      
+      <!-- Patterns -->
+      <div id="sg-patterns">
+          <div class="sg-pattern">
+            <h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-06-components-help&#x2F;01-molecules-06-components-help.html" class="patternLink" data-patternpartial="">help</a></h2>
+            <div class="sg-pattern-body">
+              <p>help</p>
+              <div class="sg-code" style="display: none">
+                <h3 class="sg-code-head">HTML</h3>
+                <pre class="sg-code-html">
+                  <code>
+                    &lt;p&gt;help&lt;&#x2F;p&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+          <div class="sg-pattern">
+            <h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-06-components-timer&#x2F;01-molecules-06-components-timer.html" class="patternLink" data-patternpartial="">timer</a></h2>
+            <div class="sg-pattern-body">
+              <p>Timer</p>
+              <div class="sg-code" style="display: none">
+                <h3 class="sg-code-head">HTML</h3>
+                <pre class="sg-code-html">
+                  <code>
+                    &lt;p&gt;Timer&lt;&#x2F;p&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+      </div> <!--end #sg-patterns-->
+  
+    </div><!--end .sg-main-->
+    
+    <!-- JS to hook everything together and do annotations -->
+    <script>
+      // handle injection of items from PHP
+      var patternPartial = "viewall-molecules-components";
+      var lineage = "";
+    </script>
+    <script src="../../styleguide/js/vendor/jwerty.js"></script>
+    <script src="../../styleguide/js/postmessage.js"></script>
+    <script src="../../data/annotations.js"></script>
+    <script src="../../styleguide/js/annotations-pattern.js"></script>
+    <script src="../../styleguide/js/code-pattern.js"></script>
+    
+  </body>
+</html>
