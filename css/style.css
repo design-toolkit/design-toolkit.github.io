@@ -436,6 +436,9 @@ td {
 }
 
 /*------------------------------------*\
+    $GRID SUSY
+\*------------------------------------*/
+/*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
 /*------------------------------------*\
@@ -806,6 +809,223 @@ td {
   .copyright {
     float: right;
   }
+}
+
+/*------------------------------------*\
+    $SUSY GRID/LAYOUT PLAY
+\*------------------------------------*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*------------------------------------*\
+    MIXINS
+\*------------------------------------*/
+/*------------------------------------*\
+    VAIABLES
+\*------------------------------------*/
+/*------------------------------------*\
+    CLASSES
+\*------------------------------------*/
+.wrap {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+  background-size: 12.82051282%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
+}
+.wrap:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media (min-width: 600px) {
+  .wrap {
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+    background-size: 11.36363636%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+  }
+}
+@media (min-width: 980px) {
+  .wrap {
+    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+    background-size: 6.32911392%;
+    background-origin: content-box;
+    background-clip: content-box;
+    background-position: left top;
+  }
+}
+
+@media (min-width: 980px) {
+  .content {
+    width: 74.6835443%;
+    float: left;
+    margin-right: 1.26582278%;
+  }
+}
+
+@media (min-width: 980px) {
+  .sidebar {
+    width: 24.05063291%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+h2 {
+  padding: 1rem 0;
+  text-align: center;
+  color: #555;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.site-header, .site-footer {
+  background: rgba(234, 159, 195, 0.8);
+}
+
+.site-header a {
+  color: #555;
+  text-decoration: none;
+}
+
+.content {
+  margin-top: 5vh;
+  padding-bottom: 1rem;
+  background: rgba(113, 218, 210, 0.8);
+}
+
+.sidebar {
+  margin-top: 5vh;
+  background: rgba(250, 231, 179, 0.8);
+  padding-bottom: 1rem;
+}
+.sidebar a {
+  color: #666;
+  padding-left: 1rem;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.widget {
+  background: rgba(240, 150, 113, 0.5);
+}
+
+.site-footer {
+  margin-top: 5vh;
+}
+
+.logo {
+  float: left;
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+nav {
+  float: right;
+}
+nav li {
+  list-style: none;
+  float: left;
+  margin-left: 1em;
+  line-height: 2rem;
+}
+
+.gallery:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+@media (min-width: 980px) {
+  .gallery {
+    padding: 0 8.47457627%;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery__item {
+    width: 48.71794872%;
+    float: left;
+    margin-right: 2.56410256%;
+    margin-bottom: 2.56410256%;
+  }
+  .gallery__item:nth-child(2n) {
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 600px) and (max-width: 980px) {
+  .gallery__item {
+    width: 31.81818182%;
+    float: left;
+    margin-right: 2.27272727%;
+    margin-bottom: 2.27272727%;
+  }
+  .gallery__item:nth-child(3n) {
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 980px) {
+  .gallery__item {
+    width: 18.36734694%;
+    float: left;
+    margin-right: 2.04081633%;
+    margin-bottom: 2.04081633%;
+  }
+  .gallery__item:nth-child(5n) {
+    float: right;
+    margin-right: 0;
+  }
+}
+
+.widget {
+  width: 24.05063291%;
+  float: left;
+}
+.widget:nth-child(4n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+.widget:nth-child(4n + 2) {
+  margin-left: 25.3164557%;
+  margin-right: -100%;
+  clear: none;
+}
+.widget:nth-child(4n + 3) {
+  margin-left: 50.63291139%;
+  margin-right: -100%;
+  clear: none;
+}
+.widget:nth-child(4n + 4) {
+  margin-left: 75.94936709%;
+  margin-right: -100%;
+  clear: none;
+}
+
+.temp-height {
+  height: 50vh;
 }
 
 /*------------------------------------*\
