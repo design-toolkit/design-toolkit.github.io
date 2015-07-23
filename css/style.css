@@ -179,7 +179,7 @@ a:hover, a:focus {
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1, .alpha {
   line-height: 1.2;
-  color: blue;
+  color: red;
 }
 
 h2, .beta {
@@ -943,6 +943,9 @@ img {
 nav {
   float: right;
 }
+nav.lesson-viewer, nav.pull-left {
+  float: left;
+}
 nav li {
   list-style: none;
   float: left;
@@ -1026,6 +1029,56 @@ nav li {
 
 .temp-height {
   height: 50vh;
+}
+
+/*------------------------------------*\
+    LESSON VIEWER
+\*------------------------------------*/
+@media (min-width: 980px) {
+  .summary {
+    width: 49.36708861%;
+    float: left;
+    margin-right: 1.26582278%;
+  }
+}
+
+@media (min-width: 980px) {
+  .course {
+    width: 49.36708861%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+.course_item {
+  height: 20vh;
+  background: rgba(240, 150, 113, 0.5);
+  margin-bottom: 2.56410256%;
+}
+
+/*------------------------------------*\
+    LOGIN PAGE
+\*------------------------------------*/
+.login {
+  background: rgba(240, 150, 113, 0.5);
+  padding: 2.56410256%;
+}
+@media (min-width: 980px) {
+  .login {
+    width: 30.37974684%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (min-width: 600px) and (max-width: 980px) {
+  .login {
+    width: 43.18181818%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.login button {
+  margin-top: 12px;
 }
 
 /*------------------------------------*\
