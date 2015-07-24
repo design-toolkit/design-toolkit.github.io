@@ -179,7 +179,6 @@ a:hover, a:focus {
 /*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
 h1, .alpha {
   line-height: 1.2;
-  color: red;
 }
 
 h2, .beta {
@@ -844,24 +843,6 @@ td {
   display: block;
   clear: both;
 }
-@media (min-width: 600px) {
-  .wrap {
-    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-    background-size: 11.36363636%;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: left top;
-  }
-}
-@media (min-width: 980px) {
-  .wrap {
-    background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
-    background-size: 6.32911392%;
-    background-origin: content-box;
-    background-clip: content-box;
-    background-position: left top;
-  }
-}
 
 @media (min-width: 980px) {
   .content {
@@ -885,12 +866,11 @@ td {
   color: #555;
 }
 
-ul, ol {
+.wrap ul, .wrap ol {
   margin: 0;
   padding: 0;
 }
-
-li {
+.wrap li {
   list-style: none;
 }
 
@@ -1079,6 +1059,74 @@ nav li {
 }
 .login button {
   margin-top: 12px;
+}
+
+/*------------------------------------*\
+    GUTTER LESSON
+\*------------------------------------*/
+#gutter .content {
+  width: 74.35897436%;
+  float: left;
+  margin-right: 2.56410256%;
+  margin-top: 10vh;
+  background: rgba(113, 218, 210, 0.5);
+}
+#gutter .sidebar {
+  width: 23.07692308%;
+  float: right;
+  margin-right: 0;
+  margin-top: 10vh;
+  height: 40vh;
+  background: rgba(250, 231, 179, 0.8);
+}
+#gutter .level-1:nth-child(odd) {
+  background: rgba(244, 49, 11, 0.5);
+}
+#gutter .level-1:nth-child(even) {
+  background: rgba(250, 231, 179, 0.5);
+}
+#gutter .level-2:nth-child(odd) {
+  background: rgba(20, 231, 179, 0.5);
+}
+#gutter .level-2:nth-child(even) {
+  background: rgba(124, 11, 19, 0.5);
+}
+#gutter .full {
+  margin-top: 1rem;
+  background: rgba(123, 222, 22, 0.5);
+}
+#gutter h2 {
+  padding: 1rem 0;
+  text-align: center;
+  color: #555;
+}
+#gutter .gallery:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#gutter .gallery__item {
+  width: 31.03448276%;
+  float: left;
+  margin-right: 3.44827586%;
+}
+#gutter .gallery__item:last-child {
+  float: right;
+  margin-right: 0;
+}
+#gutter .gallery__item:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#gutter .gallery__subitem {
+  width: 44.44444444%;
+  float: left;
+  margin-right: 11.11111111%;
+}
+#gutter .gallery__subitem:last-child {
+  float: right;
+  margin-right: 0;
 }
 
 /*------------------------------------*\
